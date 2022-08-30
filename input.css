@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.card-row,
+.testimonial-cards {
+  scrollbar-width: none;
+}
+
+.card-row::-webkit-scrollbar,
+.testimonial-cards::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollIcon svg {
+  animation: oscilate 2s ease-in-out infinite;
+}
+
+@keyframes oscilate {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(3rem);
+  }
+}
+
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+::selection {
+  background-color: #ffcc00;
+  color: #ffffff;
+}
